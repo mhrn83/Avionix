@@ -1,4 +1,4 @@
-# Motor Engine Monitoring and Supervision
+# Avionix
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -11,9 +11,10 @@
 - [Data Storage in Excel Format](#data-storage-in-excel-format)
 - [User Testing](#user-testing)
 - [Project Demo](#project-demo)
+- [Installation and Usage](#installation-and-usage)
 
 ## Introduction
-Anomalies in aircraft engine performance can lead to catastrophic accidents. To prevent such incidents, pre-flight engine performance testing is conducted using multiple sensors. These sensors transmit data to the "Motor Engine Monitoring and Supervision" software, which displays the data graphically and stores it.
+Anomalies in aircraft engine performance can lead to catastrophic accidents. To prevent such incidents, pre-flight engine performance testing is conducted using multiple sensors. These sensors transmit data to the **Avionix** software, which displays the data graphically and stores it.
 
 ## Objectives
 The objectives of this project are to receive data from a serial port based on a defined protocol, display the data, and store it. Displaying critical data, such as engine temperature, provides human operators with essential information about the current state of the engine under test. Storing the data allows for further analysis of the engine's condition and comparison of its performance under different conditions.
@@ -71,7 +72,7 @@ The settings page will include fields for serial port address, baud rate, parity
 When the user presses the "Start" button, a new file will be created, and all received data will be stored in Excel format. Each row of the Excel file will represent data received from one message. Pressing the "Stop" button will save and close the file.
 
 ## User Testing
-SENSORY program, sends engine sensor data over the serial port for desktop testing. Two virtual ports will be created, and each program will connect to one of the virtual serial ports. SENSORY will begin sending data for testing. This program is provided in FlightControlTest folder.
+Sensory program, sends engine sensor data over the serial port for desktop testing. Two virtual ports will be created, and each program will connect to one of the virtual serial ports. **SENSORY** will begin sending data for testing. This program is provided in sensory folder.
 
 ## Project Demo
 Click To Watch Full Video on Youtube :
@@ -83,11 +84,13 @@ Click To Watch Full Video on Youtube :
 1. **Clone this repository**:
 
    ```bash
-   git clone https://github.com/Mehran1383/Aircraft_Engine_Monitoring.git
+   git clone https://github.com/mhrn83/Avionix.git
 
 2. **Run programs**:
 
-   You can either run the program in Qt or using installer I have provided. Also you need to run Sensory.exe
+   run the program in Qt 5.13 or upper versions. Also you need to run Sensory.exe
    
 3.  **Make virtual serial ports**:
    There are lots of free software to carry this out. For example I use [**Virtual Serial Port Tools**](https://freevirtualserialports.com/) to make a pair of serial port connections.
+4. **Test the software**:
+   Make arbitrary changes with Sensory app and see the results in main app.
