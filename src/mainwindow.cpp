@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     , m_settings(new SettingsDialog)
 {
     ui->setupUi(this);
-    setWindowTitle(tr("Flight Control"));
+    setWindowTitle(tr("Avionix"));
     setWindowIcon(QIcon(":/img/img/flight-icon.jfif"));
 
     // Create Gauge Widgets
